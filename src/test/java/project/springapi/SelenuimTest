@@ -1,0 +1,30 @@
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumUnitTest {
+
+    @Test
+    public void testSeleniumExample() {
+        // Set up Selenium WebDriver
+        @Before
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver.exe");
+        driver = new ChromeDriver();
+    }
+
+    @Test
+    public void testExample() {
+        driver.get("https://www.example.com");
+        // Perform Selenium actions and assertions
+        // Add your test assertions here
+    }
+
+    @After
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
+    }
+}

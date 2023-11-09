@@ -56,5 +56,11 @@
 			</plugin>
 		</plugins>
 	</build>
+	<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.12</version> <!-- or a more recent version -->
+    <scope>test</scope>
+</dependency>
 
 </project>
